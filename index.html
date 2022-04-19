@@ -1,9 +1,255 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>	
+body {background-color: #A988F4;}
+.textcenter{
+	text-align:  center;
+}
+
+.textright{
+	text-align: right;
+}
+
+.textleft{
+	text-align: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgcenter {
+	align: center;
+  max-width: 90%;
+}
+.bggreen {background-color: #e6acfb;}
+
+h1 {font-size: 56px;
+	background-color:  #FDAAD1;
+	font-family: Copperplate;
+}
+	
+img{
+    width:100%;
+    max-width:600px;
+    border: 2px solid #A988F4;
+}
+
+}
+
+li {font-family:  Helvetica;
+	padding: 5px 5px;}
+.Helv {
+	font-family: Helvetica;}
+
+p {padding: 5px 5px;
+	display: inline-block;}
+
+
+
+
+//.sebor {
+	border-style: solid;
+	border-width: 5 px;
+	border-spacing: 2px ;
+}
+
+.spacing {
+	padding: 15px 0px;
+	
+
+}
+
+table, th, td {
+  border: 2px solid;
+}
+
+.pborder {
+	border-style:  solid;
+	border-width: 5px;
+	padding: 25px 50px;
+	margin-top:  25px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #FDAAD1;
+
+}
+
+.fleft {
+	float: left;
+}
+
+.flright {
+	float: right;
+	overflow:  auto;
+}
+
+.wrapping {
+	background: white;
+	max-width: auto;
+	margin: auto;
+	padding:  20px;
+
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 40px;
+}
+.container1 {
+	display: flex;
+	flex-direcion: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.itemtitle {
+	max-width: 30%;
+	border: transparent;
+	border-width: 3px;
+	padding-left: 110px;
+	padding-right: 100px;
+	text-align: center;
+	}
+
+.container2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.item {
+	max-width: 30%;
+	border: transparent;
+	border-width: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+}
+
+!{
+.book1 {flex: .733203125;}
+.book2 {flex:  .69;}
+.book3 {flex: .6484375;}
+}
+
+.avatar {
+  border-radius: 50%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.center2 {
+	text-align: center;
+}
+
+</style>
+</head>
+
 <body>
 
-<h1>Why March is a top tier month</h1>
-<p>Mic check - hello hello</p>
+<section class="center2">
+	<h1 class="textcenter">Derrick Kimura</h1>
+	<img src="scholastica photo.jpg" alt="picture of me" class="avatar imgcenter">
 
+</section>
+
+<section class="bggreen sebor">
+	<h1 class="textcenter spacing"> My Neighborhood </h1>
+	<h2 class="Helv textcenter"> Uptown </h2>
+	<p>
+		<ul class="pborder">
+			<li> I've lived here since August of 2020</li>
+			<li> I moved here because it was mad close to my work, it's next to the train, there's an Aldi and a Target next door, and because I had friends looking for a roommate (and rent was affordable)</li>
+			<li> There's a load of apartment complexes around the neighborhood and you're usually passing by brick houses and black gates when you walk down the street. A lot of folk I see walking around are probably in their 20 somethings - 30 somethings. Late at night you can usually see/hear people walking around and the train rumbles with a super faint hum if it's quiet outside. Also like 15-20 minute walk from the beach where there's a bird sanctuary and a nice harbor that's always worth checking out.</li>
+        </ul>
+    </p>
+</section>
+
+<section class="bggreen sebor">
+	<h1 class="textcenter spacing">My Favorite Neighborhood Sights</h1> 
+	<div class="container1">
+			<p class="itemtitle bold">Montrose Beach</p>
+			<p class="itemtitle bold">Mr Shawarma</p>
+			<p class="itemtitle bold">Argyle</p>
+	</div>
+		            
+	<div class="container2">
+	    <div class="item">
+	        <p>
+				<img src="Montrose Beach.jpg" alt="Montrose beach" class="imgcenter">
+				<p >
+			Montrose beach is where I go to decompress and be outside. I just try and find the most comfy spot and just stare out into the water. </p>
+	        </p>
+	    </div>
+	    <div class="item">
+	        <p>
+	        	<!--li class="textcenter">Mr Shawarma</li-->
+				<img src="Shawarma.png" alt="Beef Shawarma" class="imgcenter">
+				<p> Mr Shawarma is when I want to eat out to good food. It's kind of on the pricier side, but I always know it's going to taste good. I'm usually walking a line between deciding if I want McDonalds for the quick and dirty or Mr Shawarma for the quality.
+				</p>
+			</p>
+	    </div>
+	    <div class="item">
+	        <p>
+	        	<!--li class="textcenter">Argyle</li-->
+				<img src="Argyle.jpg" alt="Argyle Redline" class="imgcenter">
+				<p>
+				Argyle is just one of those cool cultural pockets in Chicago. It just has a ton of good grocery stores, and a bunch of great food spots nearby.
+				</p>
+	        </p>
+	    </div>
+	</div>
+<!--/div>
+	<p class="spacing">
+		Montrose beach is where I go to decompress and be outside. I just try and find the most comfy spot and just stare out into the water.
+		<br>
+		Mr Shawarma is when I want to eat out to good food. It's kind of on the pricier side, but I always know it's going to taste good. I'm usually walking a line between deciding if I want McDonalds for the quick and dirty or Mr Shawarma for the quality.
+		<br>
+		Argyle is just one of those cool cultural pockets in Chicago. It just has a ton of good grocery stores, and a bunch of great food spots nearby.
+	</p--->
+
+</section>
+
+<section class="bggreen sebor">
+	<h1 class="textcenter spacing">Best things I read this year</h1>
+		<table class="center">
+			<tr >
+				<th>Title</th>
+				<th>Author</th>
+				<th>Year</th>
+			</tr>
+			<tr>
+				<th><a href="https://kodansha.us/volume/blood-on-the-tracks-1/">Blood on the Tracks</a></th>
+				<th><a href="https://en.wikipedia.org/wiki/Sh%C5%ABz%C5%8D_Oshimi">Shuzo Oshimi</a></th>
+				<th>2017</th>
+			</tr>
+			<tr>
+				<th><a href="https://www.mitchalbom.com/books/tuesdays-with-morrie/">Tuesdays with Morrie</a></th>
+				<th><a href="https://en.wikipedia.org/wiki/Mitch_Albom">Mitch Albom</a></th>
+				<th>1997</th>
+			</tr>
+			<tr>
+				<th><a href="https://en.wikipedia.org/wiki/Behind_the_Beautiful_Forevers">Behind the Beautiful Forevers</a></th>
+				<th><a href="https://en.wikipedia.org/wiki/Katherine_Boo">Katherine Boo</a></th>
+				<th>2012</th>
+			</tr>
+		</table>
+		<br>
+	<div class="container2">
+		<!div class="book1">
+			<img src="Bltracks.jpg" class="item">
+		<!/div>
+		<!div class="book2">
+			<img src="Tmor.jpg" class="item">
+		<!/div>
+		<!div class="book3">	
+			<img src="Bhind.jpg" class="item"> 
+		<!/div>
+	</div>
 </body>
-</html>
